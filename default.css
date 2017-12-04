@@ -1,0 +1,140 @@
+﻿html
+{
+	background: green;
+	background-image: url('teach.jpg');
+	background-repeat: repeat-y;
+	-webkit-font-smoothing: antialiased;
+}
+body
+{
+	/*box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);*/
+	color: #545454;
+	font-family: "Helvetica Neue" , Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0 auto;
+	max-width: 75%;
+	padding: 2em 2em 4em;
+}
+.double
+{
+	width: 200%;
+}
+
+.zero
+{
+	height: 30px;
+}
+
+.button
+{
+	position: relative;
+	background-color: #008CBA;
+	border: none;
+	font-size: 28px;
+	color: #FFFFFF;
+	padding: 1%;
+	width: 100%;
+	text-align: center;
+	-webkit-transition-duration: 0.4s;
+	/*transition-duration: 1s;*/
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+
+.button:after
+{
+	content: "";
+	background: #f1f1f1;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px !important;
+	margin-top: -120%;
+	/*opacity: 0;
+	transition: all 1.5s;*/
+}
+
+.button:active:after
+{
+	padding: 0;
+	margin: 0;
+/*	opacity: 1;
+	transition: 0s;*/
+}
+
+.dropbtton
+{
+	background-color: #008CBA;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+.dropbtton:hover, .dropbttn:focus
+{
+	background-color: #007cba;
+}
+
+.dropdown
+{
+	position: relative;
+	display: inline-block;
+}
+
+.dropdownlist
+{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	overflow: auto;
+/*	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+	z-index: 1;
+}
+
+.dropdownlist a
+{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown a:hover
+{
+	background-color: white;
+}
+
+.show
+{
+	display: inline-block;
+}
+input[type=text]
+{
+	padding: 12px 20px;
+	margin: 5px 0;
+	border: 2px solid rgb(49, 135, 210);
+/*	border-radius: 5px;*/
+	width: auto;
+}
+input[type=password]
+{
+	padding: 12px 20px;
+	margin: 5px 0;
+	border: 2px solid rgb(49, 135, 210);
+	/*border-radius: 5px;*/
+	width: auto;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	color: #222;
+	font-weight: 600;
+	line-height: 1.3;
+}
