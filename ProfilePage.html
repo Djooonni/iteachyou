@@ -1,0 +1,100 @@
+<!DOCTYPE html >
+
+<html >
+<head runat="server">
+    <title>ITeachYou</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+        
+    body {
+    background-color: #e0e0eb;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 3;
+    margin: 0 auto;
+    width: 70%;
+    padding: 2em 2em 4em;
+} 
+ 
+</style>
+</head>
+    
+<body>   
+  <form id="form1" runat="server">
+      <table>
+          <tr> 
+              <h2>  
+                  <img src="images/flower.jpg" alt = "Profil şəkli" width = "25%" height = "10%" align="left"> 
+                  <br>
+                  &nbsp; &nbsp;  Ad: 
+                  <Label ID = "label" Text = "name">Fidan</Label> 
+              </h2> 
+          </tr>
+          
+          
+          <tr>
+              <h2> &nbsp; &nbsp; Soyad: 
+                  <Label ID = "label" Text = "surname">Əliyeva</Label> 
+              </h2>
+          </tr>
+          
+          
+          <tr> 
+              <h2> &nbsp; &nbsp; İxtisas: 
+                  <Label ID = "label" Text = "Major">Fizika</Label>
+              </h2>
+          </tr>
+          
+          
+          <tr>
+              <h2> &nbsp; &nbsp; Ünvan: 
+                  <Label ID = "label" Text = "Address">Bakı şəhəri</Label> 
+                  <br>
+              </h2>
+          </tr>
+          
+          <tr>
+              <h2>Gün: 
+                  
+                  <Label ID = "label" Text = "Address">Şənbə 14:00</Label> 
+                  <br>
+              </h2>
+          </tr>
+          
+
+          <tr>  
+              <h2>Aylıq təhsil haqqı: 
+                  <Label ID = "label" Text = "Fee">50 Azn</Label> 
+                  <br>
+              </h2>
+          </tr>
+          
+          <tr>  
+              <h2>Əlaqə nömrəsi: 
+                  <Label ID = "label" Text = "phone">123 456 789</Label> 
+                  <br>
+              </h2>
+          </tr>
+          
+          <tr>  
+              <h2>Əlavə məlumat: <br> <br> <Label ID = "label" Text = "video">Video:</Label> </h2> 
+                  <video width="400" controls>
+                      <source src="video/Fidan.mp4" type="video/mp4">
+                      <source src="video/Fidan.mp4" type="video/ogg">
+                      Your browser does not support HTML5 video.
+                  </video>
+                  <br>
+          </tr>
+
+      </table>
+      
+      <button style="background-color: #008CBA; width: 22%; height: 57px;"> <a href="EditProfile.html">Məlumatı dəyişmək </a> </button>
+      <button style="background-color: #008CBA; width: 22%; height: 57px; font-size: 105%;
+                     position: relative; left: 56%; top 85%;"><a href="index.html">Çıxış</a></button>
+       </form>
+</body>
+</html>

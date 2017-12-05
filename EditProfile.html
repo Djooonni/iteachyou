@@ -1,0 +1,143 @@
+<!DOCTYPE html >
+
+<html >
+<head runat="server">
+    <title>ITeachYou</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+        
+         body {
+    background-color: #e0e0eb;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 3;
+    margin: 0 auto;
+    width: 70%;
+    padding: 2em 2em 4em;
+}
+        
+        .drpdown{
+
+                          
+        }
+} 
+        
+</style>
+</head>
+    
+<body>   
+  <form id="form1" runat="server">
+      <table>
+          <tr> 
+              <h2>  
+                  <img src="images/flower.jpg" alt = "Profil şəkli" width = "25%" height = "10%" align="left"> 
+                  <input type="file" id="myFile" style = "position:relative; left: -25%; top: 190px;">
+                  <br>
+                  &nbsp; &nbsp;  Ad: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="text3" id="name">
+              </h2> 
+          </tr>
+          
+          
+          <tr>
+              <h2> &nbsp; &nbsp; Soyad: 
+                  <input type="text3" id="surname">
+              </h2>
+          </tr>
+          
+          
+          <tr> 
+              <h2> &nbsp; &nbsp; İxtisas:</h2> 
+                  <div class="dropdown">
+                      <select multiple size ="3" style = "height: 50%; width: 14%; position: relative;
+                                                          left: 13%; top: -60px; border-color: #008CBA" >
+                          <option value ="Dərsi seç" disabled selected> Dərsi seç</option>
+                          <optgroup label ="Dillər" >
+                              <option value = "Azerbaijani"> Azərbaycan dili </option>
+                              <option value = "English"> İngilis dili </option>
+                              <option value = "French"> Fransız dili </option>
+                              <option value ="German"> Alman dili </option> 
+                              <option value ="Russian"> Rus dili </option>
+                              <option value ="Spanish"> İspan dili </option> 
+                          </optgroup>  
+                          <optgroup label ="Humanitar">
+                              <option value = "History"> Tarix </option>
+                              <option value = "Literature"> Ədəbiyyat </option>
+                          </optgroup>
+                          <optgroup label = "Təbiət elmləri">
+                              <option value ="Biology"> Biologiya</option>
+                              <option value ="Math"> Rİyaziyyat</option>
+                              <option value ="Physics">Fizika</option>
+                              <option value ="Geography"> Coğrafiya </option>
+                              <option value ="Chemistry"> Kimya</option>
+                          </optgroup>
+                          <optgroup label = "Programlaşdırma">
+                              <option value ="C/C++"> C/C++ </option>
+                              <option value ="Java"> Java </option>
+                              <option value ="JavaScript"> JavaScript </option>
+                              <option value ="PHP"> PHP </option>
+                              <option value ="Python"> Python </option>
+                          </optgroup>
+                          <optgroup label ="Beynəlxalq tanınmış">
+                              <option value ="Ielts">Ielts</option>
+                              <option value =TOEFL>TOEFL </option>
+                              <option value ="SAT">SAT </option>
+                          </optgroup>
+        
+        
+     </select>
+     
+ </div>
+          </tr>
+          <div id="mem" style="margin-left: 25%; margin-top: -10%;">
+          <p>Birdən çox ixtisas seçmək üçün "ctrl" düyməsini basaraq klikləyin (Mac üçün "command")</p>
+          </div>
+          
+          <tr>
+              <h2>Ünvan: 
+                  <input type="text3" id="Address"> 
+                  <br>
+              </h2>
+          </tr>
+          
+          <tr>
+              <h2> Gün:</h2>
+              <h3><input type="checkbox" id="Monday" value="Monday">Bazar ertəsi </h3>
+              <h3><input type="checkbox" id="Tuesday" value="Tuesday">Çərşənbə axşamı</h3>
+              <h3><input type="checkbox" id="Wednesday" value="Wednesday">Çərşənbə</h3>
+              <h3><input type="checkbox" id="Thursday" value="Thursday">Cümə axşamı</h3>
+              <h3><input type="checkbox" id="Friday" value="Friday">Cümə</h3>
+              <h3><input type="checkbox" id="Saturday" value="Saturday">Şənbə</h3>
+              <h3><input type="checkbox" id="Sunday" value="Sunday">Bazar</h3>
+          </tr>
+          <tr>  
+              <h2>Aylıq təhsil haqqı: 
+                  <input type="text3" id="Fee">
+                  <br>
+              </h2>
+          </tr>
+          
+          <tr>  
+              <h2>Əlaqə nömrəsi: &nbsp; &nbsp;
+                  <input type="text3" id="phone">
+                  <br>
+              </h2>
+          </tr>
+          
+           <tr>  
+              <h2>Əlavə məlumat:&nbsp; Video seçin &nbsp; &nbsp;
+                  <input type="file" id="myFile" style = "position:relative; left: 1%; top: 100%;">
+                  <br>
+              </h2>
+          </tr>
+          
+      </table> 
+      
+      <button class = "button" style = "position: relative; left: 83%; top: 94%; width:20%;">Yadda saxla</button>
+       </form>
+</body>
+</html>
